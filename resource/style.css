@@ -1,0 +1,117 @@
+
+@page { margin: 0 }
+
+section {
+  margin: 0;
+  padding: 10px;
+  width: 200mm; height: auto;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+body {
+  margin: 0;
+/*本文フォント*/
+  font-family:  "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  font-size: 18px;
+}
+
+table{
+width: 120mm;
+margin: auto;
+text-align: center;
+border-collapse: collapse;
+}
+
+caption{
+  font-weight: bold;
+  font-size: 11pt;
+  margin: 2mm;
+}
+
+th{
+  border-top:2px  solid  #000000;
+}
+
+ thead{
+  border-bottom:2px  solid  #000000;
+  border-top: 2px solid #000000;
+}
+
+
+tbody{
+  border-bottom:2px  solid  #000000;
+  border-top: 2px solid #000000;
+}
+td{
+  padding: 5px 10px;
+}
+
+p{
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+li{
+  margin: 5mm 0 5mm 10mm;
+}
+
+.reference{
+  padding: 5;
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.listtype_none{
+	list-style-type: none;
+	padding: 0;
+}
+
+.center{
+  text-align: center;
+}
+
+#top_title{
+  margin: 0;
+  font-size: 20pt;
+  position: relative;
+  top: -40px;
+}
+
+.right{
+  margin:0;
+  text-align: right;
+}
+
+section::after {
+  position: absolute;
+  bottom: 10mm;
+  right: 50vw;
+  counter-increment:section;
+  content: " " countersection);
+}
+
+img{
+  width: 150mm;
+  height: auto;
+}
+
+#celluneko {
+  width: 100px;
+  height: auto;
+}
+
+/** For screen preview **/
+@media screen {
+  body { background: #e0e0e0 }
+  section {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm;
+  }
+}
+
+
+
